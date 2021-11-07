@@ -3,15 +3,10 @@ var initials ='jk'; // your initials
 var choice = '1'; // starting choice, so it is not empty
 var screenbg = 240; // off white background
 
-function preload() {
-// preload() runs once, it may make you wait
-  img = loadImage('grass.png');  // cat.jpg needs to be next to this .js file
-// you can link to an image on your github account
-// img = loadImage('https://dma-git.github.io/images/74.png');
-}
+
 
 function setup() {
-createCanvas(600, 400);  // canvas size
+createCanvas(800, 800);  // canvas size
 background(screenbg);   // use our background screen color
 }
 
@@ -30,56 +25,78 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
   // just make sure each key option has the a stroke or fill and then what type of 
   // graphic function
 
- if (toolChoice == '1' ) {  // first tool
+ if (toolChoice == '1' ) { 
+  
    
-    stroke(01);
    
-    ellipse(mouseX, mouseY, 10, 10);
-     line(mouseX, mouseY, pmouseX, pmouseY);
-    
-  } else if (toolChoice == '2') { // second tool
-
-    stroke(20);
-    line(mouseX, mouseY, pmouseX, pmouseY);
-  } else if (toolChoice == '3') { // third tool
-
-    stroke(300, 100, 0, 80);
-    line(mouseX, mouseY, pmouseX, pmouseY);
-  } else if (toolChoice == '4') {
-
-    stroke(0, 0, 255);
-    line(mouseX, mouseY, pmouseX, pmouseY);
-  } else if (key == '5') { // this tool calls a function
-    stroke(0, 0, 255);
-    testbox(20, 20, 200);
-    testbox(200, 20, 20);
-    
- // make testbox do something!
- //   line(mouseX, mouseY, pmouseX, pmouseY);
-  } else if (toolChoice == '6') {
-
-    stroke(200);
-    line(mouseX, mouseY, pmouseX, pmouseY);
-  } else if (toolChoice == '7') {
-
-    fill(100, 200, 100);
-    rect(mouseX, mouseY, 20, 20);
+  //feet
+   fill(255, 196, 128);
+  noStroke();
+    ellipse(mouseX, mouseY,20,20); //shape1 feet
+  
+   
+   
+   } else if (toolChoice == '2') {
+  
+  
+  //body
+  noStroke();
+     fill(137, 201, 255);
+  arc(mouseX, mouseY, 130,390, radians(180), radians (0)); //shape2
+  
+    } else if (toolChoice == '3') {
+  
+  //stomach
+  noStroke();
+      fill(87, 179, 255);
+  arc(mouseX, mouseY, 100,200, radians(180), radians(0))  //shape3
+  
+    } else if (toolChoice == '4') {
+      
+  //hat
+  noStroke();
+      fill(255, 105, 105);
+  rect(mouseX, mouseY, 30, 20, 100, 100); //shape4
+      
+      } else if (toolChoice == '5') {
+  
+      fill(0, 0, 0);
+  ellipse(mouseX, mouseY, 100,50,120,40) //shape5
+      
+      } else if (toolChoice == '6') {
+        
+  noStroke();
+        fill(0, 0, 0);
+    ellipse(mouseX, mouseY,10,10); //shape6 draw hat
+      
+      } else if (toolChoice == '7') {
+        
+      fill(110, 110, 110);
+  ellipse(mouseX, mouseY, 70,50,120,40) //shape7 top of hat
+        
   } else if (toolChoice == '8') {
-
-    fill(300, 100, 0, 80);
-    rect(mouseX, mouseY, 20, 20);
-  } else if (toolChoice == '9') {
-
-    fill(300, 100, 0, 80);
-    rect(mouseX, mouseY, 40, 40);
-  } else if (toolChoice == '0') {
-    stroke(0, 0);
-    fill(random(255), random(255), random(255), random(255));
-    rect(mouseX, mouseY, 200, 150);
-  } else if (toolChoice == 'g' || toolChoice == 'G') { // g places the image we pre-loaded
-    image(img, mouseX-25, mouseY-25, 50, 50);
+        
     
-  }
+  //eyes
+    
+  fill(0, 0, 0);
+  circle(mouseX, mouseY, 8,190,7) //shape8 draw eyes
+    
+  } else if (toolChoice == '9') {
+    
+    
+  //beak
+  fill(255, 196, 128);
+  circle(mouseX, mouseY, 10,190,7) //shape9 draw beak
+      
+      } else if (toolChoice == '0') {
+      
+  //grass
+   fill(107, 197, 85);
+  triangle(mouseX, mouseY, 400, 800, 100, 800, 86, 55); //grass
+        
+      }
+
  }
  
 function testbox(r, g, b) {
@@ -87,7 +104,7 @@ function testbox(r, g, b) {
   x = mouseX;
   y = mouseY;
   fill(r, g, b);
-  rect(x-50, y-50, 100, 100);
+  rect(x50, y50, 100, 100);
 
 }
 
