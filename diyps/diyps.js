@@ -13,17 +13,17 @@ var initials ='jk';
 var choice = '1'; 
 
 function preload() {
-   giraffe = loadImage('gentlemen/giraffe.png');
-   turtle = loadImage('gentlemen/turtle.png');
-   snail = loadImage('gentlemen/snail.png');
-   bird = loadImage('gentlemen/bird.png');
-   penguin = loadImage('gentlemen/penguin.png');
-   bow = loadImage('gentlemen/bow.png');
-   watch = loadImage('gentlemen/watch.png');
-   eyeglass = loadImage('gentlemen/eye.png');
-   hat = loadImage('gentlemen/hat.png');
-   mustache = loadImage('gentlemen/mustache.png');
-   grass = loadImage('gentlemen/grass.png');
+   giraffe = loadImage('giraffe.png');
+   turtle = loadImage('turtle.png');
+   snail = loadImage('snail.png');
+   bird = loadImage('bird.png');
+   penguin = loadImage('penguin.png');
+   bow = loadImage('bow.png');
+   watch = loadImage('watch.png');
+   eyeglass = loadImage('eye.png');
+   hat = loadImage('hat.png');
+   mustache = loadImage('mustache.png');
+   grass = loadImage('grass.png');
 }
 
 function setup() {
