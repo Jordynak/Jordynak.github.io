@@ -13,17 +13,17 @@ var initials ='jk';
 var choice = '1'; 
 
 function preload() {
-   giraffe = loadImage('giraffe.png');
-   turtle = loadImage('turtle.png');
-   snail = loadImage('snail.png');
-   bird = loadImage('bird.png');
-   penguin = loadImage('penguin.png');
-   bow = loadImage('bow.png');
-   watch = loadImage('watch.png');
-   eyeglass = loadImage('eye.png');
-   hat = loadImage('hat.png');
-   mustache = loadImage('mustache.png');
-   grass = loadImage('grass.png');
+   giraffe = loadImage('jordynak.github.io/diyps/giraffe.png');
+   turtle = loadImage('jordynak.github.io/diyps/turtle.png');
+   snail = loadImage('jordynak.github.io/diyps/snail.png');
+   bird = loadImage('jordynak.github.io/diyps/bird.png');
+   penguin = loadImage('jordynak.github.io/diyps/penguin.png');
+   bow = loadImage('jordynak.github.io/diyps/bow.png');
+   watch = loadImage('jordynak.github.io/diyps/watch.png');
+   eyeglass = loadImage('jordynak.github.io/diyps/eye.png');
+   hat = loadImage('jordynak.github.io/diyps/hat.png');
+   mustache = loadImage('jordynak.github.io/diyps/mustache.png');
+   grass = loadImage('jordynak.github.io/diyps/grass.png');
 }
 
 function setup() {
