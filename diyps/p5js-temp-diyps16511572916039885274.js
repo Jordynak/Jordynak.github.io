@@ -44,37 +44,37 @@ function draw() {
 function newkeyChoice(toolChoice) {
 
  if (toolChoice == '1' ) {
- image(giraffe, mouseX, mouseY, 50, 50);
+ image(giraffe.png, mouseX, mouseY, 50, 50);
     
  } else if (toolChoice == '2') {
- image(turtle, mouseX, mouseY, 50, 50);
+ image(turtle.png, mouseX, mouseY, 50, 50);
   
  } else if (toolChoice == '3') {
-image(snail, mouseX, mouseY, 50, 50);
+image(snail.png, mouseX, mouseY, 50, 50);
   
 } else if (toolChoice == '4') {
-image(bird, mouseX, mouseY, 50, 50);
+image(bird.png, mouseX, mouseY, 50, 50);
   
 } else if (key == '5') {
-image(penguin, mouseX, mouseY, 90, 90);
+image(penguin.png, mouseX, mouseY, 90, 90);
   
 } else if (toolChoice == '6') {
-image(bow, mouseX, mouseY, 20, 20);
+image(bow.png, mouseX, mouseY, 20, 20);
   
 } else if (toolChoice == '7') {
-image(watch, mouseX, mouseY, 20, 20);
+image(watch.png, mouseX, mouseY, 20, 20);
  
 } else if (toolChoice == '8') {
-image(eye, mouseX, mouseY, 20, 20);
+image(eye.png, mouseX, mouseY, 20, 20);
   
 } else if (toolChoice == '9') {
-image(hat, mouseX, mouseY, 20, 20);
+image(hat.png, mouseX, mouseY, 20, 20);
   
 } else if (toolChoice == '0') {
-   image(mustache, mouseX, mouseY, 20, 20);
+   image(mustache.png, mouseX, mouseY, 20, 20);
  
 } else if (key == 'g' || key == 'G') {
-    image(grass, mouseX, mouseY, 50, 50);
+    image(grass.png, mouseX, mouseY, 50, 50);
  
   }
  }
